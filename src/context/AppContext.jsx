@@ -16,7 +16,7 @@ const getInitialTheme = () => {
 export function AppProvider({ children }) {
   const { i18n } = useTranslation();
   const [theme, setTheme] = useState(getInitialTheme);
-  const [language, setLanguageState] = useState(() => i18n.language || "en");
+  const [language, setLanguageState] = useState(() => i18n.language || "ar");
 
   // Apply theme to <html>
   useEffect(() => {

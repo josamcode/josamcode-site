@@ -6,11 +6,10 @@ import ar from "./locales/ar.json";
 const STORAGE_KEY = "josam.lang";
 
 const getInitialLanguage = () => {
-  if (typeof window === "undefined") return "en";
+  if (typeof window === "undefined") return "ar";
   const stored = window.localStorage.getItem(STORAGE_KEY);
   if (stored === "en" || stored === "ar") return stored;
-  const nav = (navigator.language || "en").toLowerCase();
-  return nav.startsWith("ar") ? "ar" : "en";
+  return "ar";
 };
 
 i18n.use(initReactI18next).init({
@@ -19,7 +18,7 @@ i18n.use(initReactI18next).init({
     ar: { translation: ar },
   },
   lng: getInitialLanguage(),
-  fallbackLng: "en",
+  fallbackLng: "ar",
   interpolation: { escapeValue: false },
   returnObjects: true,
 });
