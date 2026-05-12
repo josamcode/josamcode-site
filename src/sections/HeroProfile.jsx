@@ -1,16 +1,6 @@
-import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, MoveDown } from "lucide-react";
+import { MoveDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Container from "../components/ui/Container";
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 18 },
-  show: (i = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, delay: 0.05 * i, ease: [0.22, 1, 0.36, 1] },
-  }),
-};
 
 function PortraitPlaceholder() {
   const { t } = useTranslation();
@@ -22,8 +12,23 @@ function PortraitPlaceholder() {
       <div className="absolute inset-0 bg-grid opacity-40" />
       {/* Initials monogram */}
       <div className="absolute inset-0 grid place-items-center">
-        <div className="relative">
-          <img src="/my-photo.jpg" />
+        <div className="relative h-full w-full">
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/my-photo-480.webp 480w, /my-photo-744.webp 744w, /my-photo-960.webp 960w"
+              sizes="(min-width: 1280px) 424px, (min-width: 1024px) 372px, min(100vw - 48px, 640px)"
+            />
+            <img
+              src="/my-photo.jpg"
+              alt={t("hero.portraitName")}
+              width="744"
+              height="992"
+              fetchPriority="high"
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
+          </picture>
         </div>
       </div>
 
@@ -55,33 +60,24 @@ export default function HeroProfile() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           {/* Left column — text */}
           <div className="lg:col-span-7 xl:col-span-7">
-            <motion.h1
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              custom={1}
-              className="mt-6 font-display text-[28px] sm:text-[40px] lg:text-[56px] xl:text-[60px] leading-[1.02] font-light text-ink-500 dark:text-ivory-50 tracking-[-0.02em]"
+            <h1
+              style={{ "--reveal-delay": "50ms" }}
+              className="mt-6 font-display text-[28px] sm:text-[40px] lg:text-[56px] xl:text-[60px] leading-[1.02] font-light text-ink-500 dark:text-ivory-50 tracking-[-0.02em] reveal-up"
             >
               {t("hero.headline")}
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              custom={2}
-              className="mt-7 max-w-[58ch] text-[15px] sm:text-base leading-relaxed text-ink-400 dark:text-ivory-200"
+            <p
+              style={{ "--reveal-delay": "100ms" }}
+              className="mt-7 max-w-[58ch] text-[15px] sm:text-base leading-relaxed text-ink-400 dark:text-ivory-200 reveal-up"
             >
               {t("hero.paragraph")}
-            </motion.p>
+            </p>
 
             {/* Highlight card */}
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              custom={3}
-              className="mt-8 relative"
+            <div
+              style={{ "--reveal-delay": "150ms" }}
+              className="mt-8 relative reveal-up"
             >
               <div className="card-surface relative rounded-[1.75rem] p-6 sm:p-7 overflow-hidden">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-moss-600/40 to-transparent" />
@@ -98,15 +94,12 @@ export default function HeroProfile() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Stats row */}
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              animate="show"
-              custom={4}
-              className="mt-8 grid grid-cols-3 gap-4 sm:gap-6"
+            <div
+              style={{ "--reveal-delay": "200ms" }}
+              className="mt-8 grid grid-cols-3 gap-4 sm:gap-6 reveal-up"
             >
               {[
                 { value: "16+", labelKey: "hero.stats.shipped" },
@@ -125,16 +118,14 @@ export default function HeroProfile() {
                   </div>
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
 
           {/* Right column — portrait */}
           <div className="lg:col-span-5 xl:col-span-5">
-            <motion.div
-              initial={{ opacity: 0, y: 24, scale: 0.98 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-              className="relative"
+            <div
+              style={{ "--reveal-delay": "100ms" }}
+              className="relative reveal-up"
             >
               {/* Frame layers */}
               <div className="absolute -inset-3 rounded-[2.25rem] border border-ink-500/8 dark:border-ivory-50/8" aria-hidden />
@@ -152,23 +143,21 @@ export default function HeroProfile() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
         {/* Scroll hint */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.8 }}
-          className="mt-10 lg:mt-14 flex items-center gap-3 text-ink-400 dark:text-ivory-200"
+        <div
+          style={{ "--reveal-delay": "350ms" }}
+          className="mt-10 lg:mt-14 flex items-center gap-3 text-ink-400 dark:text-ivory-200 reveal-up"
         >
           <span className="font-mono text-[10px] uppercase tracking-[0.22em]">
             {t("hero.scrollHint")}
           </span>
           <span className="hairline w-24" />
           <MoveDown className="h-3.5 w-3.5" />
-        </motion.div>
+        </div>
       </Container>
     </section>
   );

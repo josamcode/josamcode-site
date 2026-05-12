@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import Container from "../ui/Container";
 import LanguageToggle from "../common/LanguageToggle";
 import ThemeToggle from "../common/ThemeToggle";
@@ -49,13 +48,21 @@ export default function Header() {
         <a href="#hero" className="group flex items-center gap-3">
           <img
             src="/logo.png"
+            srcSet="/logo-260.webp 2x"
             alt="Logo"
+            width="130"
+            height="24"
+            decoding="async"
             className="h-6 max-w-[130px] hidden dark:block"
           />
 
           <img
             src="/logo-dark.png"
+            srcSet="/logo-dark-260.webp 2x"
             alt="Logo"
+            width="130"
+            height="24"
+            decoding="async"
             className="h-6 max-w-[130px] block dark:hidden"
           />
         </a>
@@ -100,15 +107,8 @@ export default function Header() {
       </Container>
 
       {/* Mobile drawer */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2 }}
-            className="lg:hidden border-t border-ink-500/8 dark:border-ivory-50/8 bg-ivory-50/95 dark:bg-ink-800/95 backdrop-blur-xl"
-          >
+      {open && (
+          <div className="lg:hidden border-t border-ink-500/8 dark:border-ivory-50/8 bg-ivory-50/95 dark:bg-ink-800/95 backdrop-blur-xl">
             <Container className="py-6">
               <nav className="flex flex-col gap-1">
                 {navLinks.map((l) => (
@@ -139,9 +139,8 @@ export default function Header() {
                 </Button>
               </div>
             </Container>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
     </header>
   );
 }

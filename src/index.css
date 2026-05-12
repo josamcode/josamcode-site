@@ -3,10 +3,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-display: "Fraunces", "IBM Plex Sans Arabic", "Tajawal", Georgia, serif;
-  --font-sans: "Inter", "IBM Plex Sans Arabic", "Tajawal", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
-  --font-arabic: "Tajawal", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-display: "Tajawal", system-ui, sans-serif;
+  --font-sans: "Tajawal", system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  --font-arabic: "Tajawal", system-ui, sans-serif;
 
   --color-ivory-50: #fbfaf6;
   --color-ivory-100: #f6f3eb;
@@ -107,6 +107,22 @@ body::before {
   z-index: 2;
 }
 
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.reveal-up {
+  animation: reveal-up 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+
 /* Custom selection */
 ::selection {
   background-color: var(--color-moss-600);
@@ -136,6 +152,48 @@ html[dir="rtl"] .font-display {
 
 .font-arabic {
   font-family: var(--font-arabic);
+}
+
+.tajawal-extralight {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tajawal-light {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tajawal-regular {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tajawal-medium {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tajawal-bold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tajawal-extrabold {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tajawal-black {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 /* Hairline divider */

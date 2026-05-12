@@ -36,8 +36,13 @@ function PartnerCard({ partner, index, t }) {
           <div className="grid h-[100%] w-[72%] max-h-28 max-w-28 place-items-center overflow-hidden rounded-2xl sm:max-h-36 sm:max-w-36 lg:max-h-52 lg:max-w-52">
             <img
               src={partner.logo}
+              srcSet={partner.logoWebp}
+              sizes="(min-width: 1024px) 208px, (min-width: 640px) 144px, 105px"
               alt={name}
+              width="210"
+              height="210"
               loading="lazy"
+              decoding="async"
               className="h-full w-full rounded-2xl object-contain duration-500"
             />
           </div>
