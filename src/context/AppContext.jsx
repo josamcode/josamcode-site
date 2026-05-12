@@ -7,10 +7,10 @@ const LANG_KEY = "josam.lang";
 const AppContext = createContext(null);
 
 const getInitialTheme = () => {
-  if (typeof window === "undefined") return "light";
+  if (typeof window === "undefined") return "dark";
   const stored = window.localStorage.getItem(THEME_KEY);
   if (stored === "light" || stored === "dark") return stored;
-  return window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "dark";
 };
 
 export function AppProvider({ children }) {
