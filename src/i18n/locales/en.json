@@ -1,0 +1,235 @@
+{
+  "brand": {
+    "name": "Jo Sam",
+    "role": "Software Engineer",
+    "secondary": "Growth Partner"
+  },
+  "nav": {
+    "projects": "Projects",
+    "services": "Services",
+    "process": "Process",
+    "social": "Social",
+    "contact": "Contact",
+    "cta": "Tell me about your project",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "rail": {
+    "about": "About",
+    "projects": "Projects",
+    "partners": "Partners",
+    "social": "Connect",
+    "services": "Services",
+    "growth": "Growth"
+  },
+  "hero": {
+    "tag": "Software Engineer · Growth Partner",
+    "kicker": "Available for new partnerships",
+    "headline": "I build websites and systems that help businesses sell more, operate cleaner, and track growth with clarity.",
+    "paragraph": "From a professional website to a management system or dashboard, the goal is simple: clearer experience, smoother operations, and better decisions.",
+    "card": {
+      "label": "The idea in short",
+      "title": "Not just a website. Not just code.",
+      "body": "I help turn a business idea or operational problem into a clear digital solution that attracts customers, organizes work, and makes the numbers easier to understand."
+    },
+    "stats": {
+      "shipped": "Projects shipped",
+      "stack": "Tech stack",
+      "focus": "Result-focused"
+    },
+    "portraitLabel": "Software Engineer",
+    "portraitName": "Jo Sam",
+    "portraitCaption": "Building software that serves the business, not just runs.",
+    "scrollHint": "Continue the journey"
+  },
+  "projects": {
+    "sectionLabel": "01 — Selected work",
+    "sectionTitle": "Real business problems, turned into clear digital solutions.",
+    "sectionLead": "A sample of websites and systems built around real problems in sales, operations, or follow-up — then shaped into a clearer digital experience.",
+    "switcher": {
+      "label": "View case"
+    },
+    "case": {
+      "problem": "Problem",
+      "built": "Solution",
+      "impact": "Outcome",
+      "kpiLabel": "Example impact",
+      "kpiNote": "* Demo figures used to explain the kind of business impact expected. They are not verified results from a real project."
+    },
+    "items": {
+      "clinic": {
+        "title": "Clinic Website",
+        "outcome": "From scattered contact to clearer bookings and a calmer patient experience.",
+        "tag": "Healthcare",
+        "problem": "Scattered contact channels and bookings slipping through the cracks.",
+        "built": "A clear website with booking, fast contact, and a simpler appointment flow.",
+        "impact": "More trust, easier bookings, and a smoother experience for staff and patients.",
+        "kpis": [
+          {
+            "value": "+38%",
+            "label": "More leads"
+          },
+          {
+            "value": "-45%",
+            "label": "Missed appointments"
+          },
+          {
+            "value": "+52%",
+            "label": "Faster operations"
+          },
+          {
+            "value": "+31%",
+            "label": "Revenue visibility"
+          }
+        ]
+      },
+      "dashboard": {
+        "title": "Sales Dashboard",
+        "outcome": "From scattered numbers to faster, sharper decisions.",
+        "tag": "Analytics",
+        "problem": "Numbers scattered across tools, making every decision slower.",
+        "built": "A single dashboard for revenue, customers, performance, and follow-up.",
+        "impact": "Clearer decisions, stronger follow-up, and focus on what actually moves the business.",
+        "kpis": [
+          {
+            "value": "+41%",
+            "label": "Faster decisions"
+          },
+          {
+            "value": "+27%",
+            "label": "Better follow-up"
+          },
+          {
+            "value": "+34%",
+            "label": "Sales visibility"
+          },
+          {
+            "value": "+22%",
+            "label": "Revenue clarity"
+          }
+        ]
+      },
+      "billing": {
+        "title": "Billing / Client System",
+        "outcome": "From messy sheets to organized client follow-up.",
+        "tag": "Operations",
+        "problem": "Sheets, invoices, payments, and follow-ups tangled together.",
+        "built": "A system that organizes clients, invoices, payment status, and follow-up in one place.",
+        "impact": "Less manual work, fewer missed payments, and calmer operations.",
+        "kpis": [
+          {
+            "value": "-60%",
+            "label": "Manual tracking"
+          },
+          {
+            "value": "+44%",
+            "label": "Payment visibility"
+          },
+          {
+            "value": "+35%",
+            "label": "Faster follow-up"
+          },
+          {
+            "value": "+29%",
+            "label": "Admin time saved"
+          }
+        ]
+      }
+    }
+  },
+  "partners": {
+    "sectionLabel": "02 — Partners in success",
+    "title": "Projects and collaborations I've worked on.",
+    "lead": "Real collaborations with businesses serving real customers — each with a clear goal and a different challenge.",
+    "items": {
+      "ara": {
+        "name": "ARA Tech",
+        "who": "A Saudi tech company. I worked with them on multiple business systems, dashboards, and internal tools."
+      },
+      "limousine": {
+        "name": "Global Limousine EG",
+        "who": "A limousine company. I built a custom system to organize bookings, operations, customers, and workflow."
+      },
+      "more": {
+        "name": "+6 Clients & Companies",
+        "who": "Worked with more than 6 clients and companies across websites, dashboards, business systems, and automation tools."
+      }
+    }
+  },
+  "social": {
+    "sectionLabel": "03 — Ready to start?",
+    "title": "Let's talk",
+    "subtitle": "Active across platforms",
+    "lead": "Got a business that needs a website or a system to organize the work? Send a message and we'll find the right fit.",
+    "ctaPrimary": "Tell me about your project",
+    "ctaSecondary": "Email me",
+    "linkLabel": "Open"
+  },
+  "process": {
+    "sectionLabel": "04 — How I work",
+    "title": "How I turn your idea into a result-driven solution",
+    "lead": "A clear process: understand the business, define the goal, build the solution, and improve it around real outcomes.",
+    "steps": [
+      {
+        "title": "Clarify the offer",
+        "body": "We define who you serve, what you offer, and why customers should choose you."
+      },
+      {
+        "title": "Present it professionally",
+        "body": "I help your service show up clearly and build trust from the first impression."
+      },
+      {
+        "title": "Build the right digital experience",
+        "body": "A website, system, dashboard, or automation that makes the business easier to use and manage."
+      },
+      {
+        "title": "Move toward commercial goals",
+        "body": "More leads, better follow-up, smoother operations, and clearer numbers."
+      }
+    ]
+  },
+  "services": {
+    "sectionLabel": "05 — Capabilities",
+    "title": "What I build and support",
+    "subtitle": "Digital solutions that help businesses sell, organize, and track growth.",
+    "items": {
+      "websites": {
+        "title": "Websites",
+        "body": "Present your service clearly and turn visitors into qualified leads."
+      },
+      "dashboards": {
+        "title": "Dashboards",
+        "body": "See the numbers instead of guessing them."
+      },
+      "systems": {
+        "title": "Management Systems",
+        "body": "Organize clients, orders, invoices, payments, and follow-up in one place."
+      },
+      "automation": {
+        "title": "Automation",
+        "body": "Reduce repetitive work and free up your team's time."
+      },
+      "growth": {
+        "title": "Growth Support",
+        "body": "Ongoing improvements tied to clear commercial goals."
+      }
+    }
+  },
+  "cta": {
+    "sectionLabel": "06 — Next step",
+    "line1": "I'm not here to build and disappear.",
+    "line2": "I'm here to help your business reach clearer operations, more customers, and commercial goals that are easier to measure.",
+    "primary": "Tell me about your project",
+    "secondary": "Email me",
+    "note": "Replies usually within 24 hours."
+  },
+  "footer": {
+    "tagline": "Software Engineer · Growth Partner.",
+    "built": "Designed and built with care.",
+    "rights": "All rights reserved."
+  }
+}
