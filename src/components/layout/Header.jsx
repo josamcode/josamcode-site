@@ -38,32 +38,30 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
+      className={`fixed inset-x-0 top-0 z-50 py-4 sm:py-0 transition-all duration-300 ${scrolled
         ? "backdrop-blur-xl bg-ivory-50/75 dark:bg-ink-800/75 border-b border-ink-500/8 dark:border-ivory-50/8"
         : "bg-transparent"
         }`}
     >
-      <Container className="flex h-16 sm:h-[72px] items-center justify-between gap-4">
+      <Container className="flex h-10 sm:h-[72px] items-center justify-between gap-4">
         {/* Brand */}
         <a href="#hero" className="group flex items-center gap-3">
           <img
             src="/logo.png"
             srcSet="/logo-260.webp 2x"
             alt="Logo"
-            width="130"
             height="24"
             decoding="async"
-            className="h-6 max-w-[130px] hidden dark:block"
+            className="h-8 max-w-[130px] hidden dark:block"
           />
 
           <img
             src="/logo-dark.png"
             srcSet="/logo-dark-260.webp 2x"
             alt="Logo"
-            width="130"
             height="24"
             decoding="async"
-            className="h-6 max-w-[130px] block dark:hidden"
+            className="h-8 max-w-[130px] block dark:hidden"
           />
         </a>
 

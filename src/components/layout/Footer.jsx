@@ -13,22 +13,18 @@ export default function Footer() {
             src="/logo.png"
             srcSet="/logo-260.webp 2x"
             alt="Logo"
-            width="130"
             height="24"
-            loading="lazy"
             decoding="async"
-            className="h-6 max-w-[130px] hidden dark:block"
+            className="h-8 max-w-[130px] hidden dark:block"
           />
 
           <img
             src="/logo-dark.png"
             srcSet="/logo-dark-260.webp 2x"
             alt="Logo"
-            width="130"
             height="24"
-            loading="lazy"
             decoding="async"
-            className="h-6 max-w-[130px] block dark:hidden"
+            className="h-8 max-w-[130px] block dark:hidden"
           />
         </div>
         <div className="text-xs text-ink-300 dark:text-ivory-200">

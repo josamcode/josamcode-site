@@ -37,9 +37,26 @@
 }
 
 html {
+  font-size: 81.25%; /* 13px base — mobile */
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 640px) {
+  html { font-size: 84.375%; } /* 13.5px on small tablets */
+}
+
+@media (min-width: 1024px) {
+  html { font-size: 81.25%; } /* 13px on laptops */
+}
+
+@media (min-width: 1280px) {
+  html { font-size: 78.125%; } /* 12.5px on desktops */
+}
+
+@media (min-width: 1536px) {
+  html { font-size: 75%; } /* 12px on large monitors */
 }
 
 /* Lenis smooth-scroll integration */

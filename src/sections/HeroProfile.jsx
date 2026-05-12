@@ -54,7 +54,7 @@ export default function HeroProfile() {
       className="relative pt-24 sm:pt-28 lg:pt-32 pb-10 lg:pb-16 overflow-hidden"
     >
       {/* Decorative top hairline */}
-      <div className="absolute inset-x-0 top-16 hairline opacity-60" aria-hidden />
+      {/* <div className="absolute inset-x-0 top-16 hairline opacity-60" aria-hidden /> */}
 
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
